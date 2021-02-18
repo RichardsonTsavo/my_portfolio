@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:my_portfolio/app/modules/home/pages/mobile_page.dart';
 import 'package:my_portfolio/app/modules/home/pages/web_page.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'home_controller.dart';
@@ -22,8 +23,8 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
         if(sizingInformation.deviceScreenType == DeviceScreenType.desktop){
           return WebHomePage(title:widget.title);
         }
-        if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
-          return Container(color:Colors.red);
+        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
+          return MobileHomePage(title: widget.title);
         }
         if (sizingInformation.deviceScreenType == DeviceScreenType.watch) {
           return Container(color:Colors.yellow);

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:mobx/mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 part 'text_editor_controller.g.dart';
 
@@ -23,6 +24,8 @@ abstract class _TextEditorControllerBase with Store {
   void changeColor(Color color) {
      pickerColor = color;
   }
+
+
   @action
   void showPickerColor(BuildContext context){
     showDialog(
