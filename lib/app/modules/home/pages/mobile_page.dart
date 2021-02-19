@@ -29,13 +29,13 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 }),
             // ignore: deprecated_member_use
             RaisedButton(
-                child: Text("Date Functions"),
+                child: Text("Calculations"),
                 onPressed: () {
-                  Modular.to.pushNamed('/date_functions');
+                  Modular.to.pushNamed('/calculations');
                 })
           ],
         ),
       ),
-    );;
+    );
   }
 }
