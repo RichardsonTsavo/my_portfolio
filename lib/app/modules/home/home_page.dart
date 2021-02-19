@@ -21,15 +21,9 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         if(sizingInformation.deviceScreenType == DeviceScreenType.desktop){
-          return WebHomePage(title:widget.title);
+          return WebHomePage(title:widget.title + " Web Version");
         }
-        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-          return MobileHomePage(title: widget.title);
-        }
-        if (sizingInformation.deviceScreenType == DeviceScreenType.watch) {
-          return Container(color:Colors.yellow);
-        }
-        return Container(color:Colors.purple);
+        return MobileHomePage(title: widget.title + " Mobile Version");
       },
     );
   }

@@ -25,9 +25,15 @@ class _WebHomePageState extends State<WebHomePage> {
           children: <Widget>[
             // ignore: deprecated_member_use
             RaisedButton(
-                child: Text("Editor RichText"),
+                child: Text("Text Editor"),
                 onPressed: () {
                   Modular.to.pushNamed('/text_editor_page');
+                }),
+            // ignore: deprecated_member_use
+            RaisedButton(
+                child: Text("Calculations"),
+                onPressed: () {
+                  Modular.to.pushNamed('/calculations');
                 })
           ],
         ),

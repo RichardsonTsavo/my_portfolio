@@ -1,3 +1,4 @@
+import 'package:my_portfolio/app/modules/calculations/calculations_module.dart';
 import 'package:my_portfolio/app/modules/text_editor/text_editor_module.dart';
 
 import 'app_controller.dart';
@@ -16,6 +17,7 @@ class AppModule extends MainModule {
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, module: HomeModule()),
         ModularRouter('/text_editor_page', module: TextEditorModule()),
+        ModularRouter('/calculations', module: CalculationsModule()),
       ];
 
   @override

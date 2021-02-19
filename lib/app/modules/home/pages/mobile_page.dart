@@ -23,9 +23,15 @@ class _MobileHomePageState extends State<MobileHomePage> {
           children: <Widget>[
             // ignore: deprecated_member_use
             RaisedButton(
-                child: Text("Editor RichText"),
+                child: Text("Text Editor"),
                 onPressed: () {
                   Modular.to.pushNamed('/text_editor_page');
+                }),
+            // ignore: deprecated_member_use
+            RaisedButton(
+                child: Text("Date Functions"),
+                onPressed: () {
+                  Modular.to.pushNamed('/date_functions');
                 })
           ],
         ),

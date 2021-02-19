@@ -25,15 +25,7 @@ class _TextEditorPageState
           return WebTextEditorPage(title: widget.title,controller: controller,);
         }
 
-        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-          return MobileTextEditorPage(title: widget.title,controller: controller,);
-        }
-
-        if (sizingInformation.deviceScreenType == DeviceScreenType.watch) {
-          return Container(color:Colors.yellow);
-        }
-
-        return Container(color:Colors.purple);
+        return MobileTextEditorPage(title: widget.title,controller: controller,);
       },
     );
   }
