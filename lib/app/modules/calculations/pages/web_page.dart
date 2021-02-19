@@ -295,7 +295,7 @@ class _WebCalculationsPageState extends State<WebCalculationsPage> {
                       );
                     }),
                   ),
-                  InfoButtons(gitUrl: "")
+                  InfoButtons(gitUrl: "https://github.com/RichardsonTsavo/my_portfolio/tree/master/lib/app/modules/calculations")
                 ],
               ),
             ));
